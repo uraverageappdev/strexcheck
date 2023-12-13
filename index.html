@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+  <title>Strex Server Waker</title>
+</head>
+
+<body>
+  <h1>Please wait while we load up our servers...</h1>
+</body>
+
+<script>
+  fetch('https://strex.onrender.com/wake').then(r => r.text()).then(function (response) {
+    if (response == 'woke')
+    {
+      window.location.replace('https://strex.onrender.com/');
+    }
+  });
+</script>
