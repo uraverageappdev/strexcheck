@@ -5,11 +5,12 @@
 
 <body>
   <h1>Please wait while we load up our servers...</h1>
+  <p>The page will reload once our folks at Render say its all right</p>
 </body>
 
 <script>
   fetch('https://strex.onrender.com/wake').then(r => r.text()).then(function (response) {
-    if (response == 'woke')
+    if (response == 'woke up')
     {
       window.location.replace('https://strex.onrender.com/');
     }
